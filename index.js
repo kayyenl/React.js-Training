@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import MyIntro from './components/MyIntro';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -32,16 +33,3 @@ reportWebVitals();
 //import React from 'react';
 //import ReactDOM from 'react-dom';
 
-function MyIntro() {
-  return (
-    <div>
-      <h1>Lee Kay Yen</h1>
-      <p> I am a student going on exchange to University of Tokyo in 1.5 months time! Below are my top 3 places to go in Tokyo.</p>
-      <ul>
-        <li>Family Mart</li>
-        <li>Akihabara</li>
-        <li>Run-down malls</li>
-      </ul>   
-    </div>
-  )
-}
