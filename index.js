@@ -3,12 +3,14 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import MyIntro from './components/MyIntro';
+import Footer from "./components/Footer"
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <MyIntro />
+    <Footer />
   </React.StrictMode>
 );
 
