@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MyIntro = () => {
+const Content = () => {
     return (
         <div>
-            <h1>Lee Kay Yen</h1>
+            <p>some info about me...</p>
             <p> I am a student going on exchange to University of Tokyo in 1.5 months time! Below are my top 3 places to go in Tokyo.</p>
             <ul>
                 <li>Family Mart</li>
@@ -14,4 +14,4 @@ const MyIntro = () => {
     );
 }
 
-export default MyIntro;
+export default Content;
