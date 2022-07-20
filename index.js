@@ -10,25 +10,33 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ContactCard 
-      name = "Mr. Whiskerson" 
-      imgUrl = "https://placekitten.com/300/200" 
-      phone = "(212) 555-1234"
-      email = "mr-whiskaz@capnap.meow"/>
+    contact = {{
+      name : "Mr. Whiskerson",
+      imgUrl : "https://placekitten.com/300/200",
+      phone : "(212) 555-1234",
+      email : "mr-whiskaz@capnap.meow",
+    }} />
     <ContactCard 
-      name = "Fluffykins" 
-      imgUrl = "https://placekitten.com/400/400" 
-      phone = "(212) 555-2345"
-      email = "fluff@me.com"/>
+    contact = {{
+      name : "Fluffykins",
+      imgUrl : "https://placekitten.com/400/400",
+      phone : "(212) 555-2345",
+      email : "fluff@me.com",
+    }} />
     <ContactCard 
-      name = "Destroyer" 
-      imgUrl = "https://placekitten.com/400/300" 
-      phone = "(212) 555-3456"
-      email = "ofworlds@yahoo.meow"/>
+    contact = {{
+      name : "Destroyer" ,
+      imgUrl : "https://placekitten.com/400/300" ,
+      phone : "(212) 555-3456",
+      email : "ofworlds@yahoo.meow",
+    }} />
     <ContactCard 
-      name = "Felix" 
-      imgUrl = "https://placekitten.com/400/350" 
-      phone = "(212) 555-4567"
-      email = "thecat@hotmail.meow"/>
+    contact = {{
+      name : "Felix" ,
+      imgUrl : "https://placekitten.com/400/350" ,
+      phone : "(212) 555-4567",
+      email : "thecat@hotmail.meow",
+    }} />
   </React.StrictMode>
 );
 
