@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppTodo from "./components/AppTodo"
-import App from "./components/App"
-import ContactCard from './components/ContactCard';
-import reportWebVitals from './reportWebVitals';
-import JokeApp from './components/JokeApp';
+import Products from './components/Products';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <JokeApp />
+    <Products />
+    <Products />
+    <Products />
+    <Products />
+    <Products />
+    <Products />
   </React.StrictMode>
 );
 

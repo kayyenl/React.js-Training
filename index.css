@@ -23,7 +23,8 @@ footer,
 }
 
 .contact-card,
-.joke {
+.joke,
+.product {
   padding-left: 48px;
   padding-top: 32px;
 }
