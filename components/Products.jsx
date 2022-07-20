@@ -1,13 +1,18 @@
 import React from 'react';
-import products from products.jsx
+import productslist from './productslist';
+import Product from './Product';
 
 const Products = () => {
-    products.map(elem => {
-        return 
+    const products = productslist.map(elem => {
+        return <Product  
+        key = {elem.id}
+        name={elem.name} 
+        price={elem.price}
+        description={elem.description} />
     })
     return (
-        <div className='product'>
-            
+        <div>
+            {products}
         </div>
     );
 }
