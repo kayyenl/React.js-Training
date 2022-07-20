@@ -27,7 +27,7 @@ const JokeApp = () => {
             <Joke 
             contents = {{
                 question: "",
-                punchline: "we do not serve beer, says the bartender",
+                punchline: "we do not serve beer, says the bartender.",
             }}/>
         </div>
     );
