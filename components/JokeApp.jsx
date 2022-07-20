@@ -1,34 +1,16 @@
 import React from 'react';
 import Joke from './Joke';
+import jokesData from './jokesData';
 
 const JokeApp = () => {
+    const jokeComponents = jokesData.map(elem => {
+         return <Joke key = {elem.id} contents = {{
+            question: elem.question,
+            punchline: elem.punchline,
+    }}/>})
     return (
         <div>
-            <Joke 
-            contents = {{
-                question: "what is the difference between a fly and a bird?",
-                punchline: "a bird can fly but a fly can't bird.",
-            }}/>
-            <Joke 
-            contents = {{
-                question: "what did the fish say when he swam into a wall?",
-                punchline: "Dam.",
-            }}/>
-            <Joke 
-            contents = {{
-                question: "what do you call a fish with no eyes?",
-                punchline: "a fsh.",
-            }}/>
-            <Joke 
-            contents = {{
-                question: "",
-                punchline: "derp.",
-            }}/>
-            <Joke 
-            contents = {{
-                question: "",
-                punchline: "we do not serve beer, says the bartender.",
-            }}/>
+           {jokeComponents}
         </div>
     );
 }
