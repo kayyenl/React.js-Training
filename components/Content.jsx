@@ -2,7 +2,7 @@ import React from 'react';
 
 const Content = () => {
     return (
-        <div>
+        <div className='content'>
             <p>some info about me...</p>
             <p> I am a student going on exchange to University of Tokyo in 1.5 months time! Below are my top 3 places to go in Tokyo.</p>
             <ul>

@@ -1,12 +1,20 @@
 import React from 'react';
+import TodoItem from './TodoItem';
 
 const AppTodo = () => {
+    const styles = {
+        color: "red",
+        paddingLeft: 24,
+        paddingTop: 24,
+        fontWeight: 800,
+        fontSize: 24
+    }
     return (
-        <div>
-            <input type="checkbox" /> I cleared FES <br />
-            <input type="checkbox" /> I made some project clones <br />
-            <input type="checkbox" /> I studied for interviews <br />
-            <input type="checkbox" /> I apply for MANGA companies <br />
+        <div style = {styles}>
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
+            <TodoItem />
         </div>
     );
 }
