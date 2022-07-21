@@ -6,9 +6,9 @@ const Product = (props) => {
     }
     return (
         <div className='product'>
-            <h1>{props.name}</h1>
-            <p>{props.description}</p>
-            <p style={styles}>{props.price}</p>
+            <h1>{props.item.name}</h1>
+            <p>{props.item.description}</p>
+            <p style={styles}>{props.item.price}</p>
             <hr />
         </div>
     );

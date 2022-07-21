@@ -1,9 +1,15 @@
 import React from 'react';
 import TodoItem from './TodoItem';
+import todosData from './todosData';
 
 const AppTodo = () => {
+    const todoList = todosData.map(elem => {
+        return <TodoItem 
+            key = {elem.id}
+            info = {elem} />
+    })
     const styles = {
-        color: "red",
+        color: "green",
         paddingLeft: 24,
         paddingTop: 24,
         fontWeight: 800,
@@ -11,10 +17,7 @@ const AppTodo = () => {
     }
     return (
         <div style = {styles}>
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
-            <TodoItem />
+            {todoList}
         </div>
     );
 }

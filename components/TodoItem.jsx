@@ -1,9 +1,16 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = (props) => {
+    const styles = {
+        textAlign: "center",
+        maxWidth: "500px",
+        border: "1px solid black",
+        padding: "32px 8px",
+        margin: "0 auto"
+    }
     return (
-        <div>
-             <input type="checkbox" /> I cleared FES <br />
+        <div style={styles}>
+             <input  type="checkbox" /> {props.info.text} <br />
         </div>
     );
 }
