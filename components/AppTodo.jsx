@@ -13,7 +13,7 @@ const AppTodo = () => {
         paddingLeft: 24,
         paddingTop: 24,
         fontWeight: 800,
-        fontSize: 24
+        fontSize: 24,
     }
     return (
         <div style = {styles}>

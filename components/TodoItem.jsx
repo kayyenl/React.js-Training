@@ -10,7 +10,7 @@ const TodoItem = (props) => {
     }
     return (
         <div style={styles}>
-             <input  type="checkbox" /> {props.info.text} <br />
+             <input  type="checkbox" checked={props.info.completed} /> {props.info.text} <br />
         </div>
     );
 }

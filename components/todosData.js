@@ -12,7 +12,7 @@ const todosData = [
     {
         id: 3,
         text: "Clean Gecko Tank",
-        completed: true
+        completed: false
     },
     {
         id: 4,
@@ -22,7 +22,7 @@ const todosData = [
     {
         id: 5,
         text: `Catch up on "Arrested Development"`,
-        completed: true
+        completed: false
     }
 ]
 

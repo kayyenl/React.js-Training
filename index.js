@@ -4,13 +4,16 @@ import './index.css';
 import AppTodo from './components/AppTodo'
 import Products from './components/Products.jsx';
 
-
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppTodo />
+    <Header />
+    <Greeting />
   </React.StrictMode>
 );
+
+
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
