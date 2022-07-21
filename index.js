@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import State2 from './components/State2'
+import State3 from './components/State3'
 import AppTodo from './components/AppTodo'
 import Event from './components/Event'
 
@@ -9,7 +10,7 @@ import Event from './components/Event'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppTodo />
+    <State3 />
   </React.StrictMode>
 );
 

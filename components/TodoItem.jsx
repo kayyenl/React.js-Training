@@ -1,5 +1,9 @@
 import React from 'react';
 
+function consoleLogger() {
+    console.log("coming up!")
+}
+
 const TodoItem = (props) => {
     const styles = {
         textAlign: "center",
@@ -10,7 +14,7 @@ const TodoItem = (props) => {
     }
     return (
         <div style={styles}>
-             <input  type="checkbox" checked={props.info.completed} /> {props.info.text} <br />
+             <input  type="checkbox" onChange={consoleLogger} checked={props.info.completed} /> {props.info.text} <br />
         </div>
     );
 }
