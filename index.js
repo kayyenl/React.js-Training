@@ -1,14 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppTodo from './components/AppTodo'
-import Products from './components/Products.jsx';
+import State from './components/State'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppTodo />
+    <State />
   </React.StrictMode>
 );
 
@@ -26,21 +25,21 @@ root.render(
 // import ReactDOM from'react-dom'
 
 // ReactDOM.render(
-//   <ul>
-//     <li>hello</li>
-//     <li>hello2</li>
-//     <li>hello3</li>
-//   </ul>, document.getElementById('root'))
-//in a function. you cannot return more than one element!
-
-// 7. Functional Component Practice 
-//import React from 'react';
-//import ReactDOM from 'react-dom';
-
-
-// class Header extends React.Component {
-//   timeString() {
-//     const date = new Date()
+  //   <ul>
+  //     <li>hello</li>
+  //     <li>hello2</li>
+  //     <li>hello3</li>
+  //   </ul>, document.getElementById('root'))
+  //in a function. you cannot return more than one element!
+  
+  // 7. Functional Component Practice 
+  //import React from 'react';
+  //import ReactDOM from 'react-dom';
+  
+  
+  // class Header extends React.Component {
+    //   timeString() {
+      //     const date = new Date()
 //     const hours = date.getHours()
 //     if (hours > 18) {
 //       return "Good night!"
@@ -49,7 +48,7 @@ root.render(
 
 //   render() {
 //     return (
-//       <div>
+  //       <div>
 //         <h1>
 //           {this.timeString()}
 //         </h1>
@@ -59,9 +58,9 @@ root.render(
 // }
 
 // class Greeting extends React.Component {
-//   render() {
-//     return (
-//       <p>
+  //   render() {
+    //     return (
+      //       <p>
 //         Welcome, {this.props.username}!
 //       </p>
 //     )
@@ -69,11 +68,29 @@ root.render(
 // }
 
 // class App extends React.Component {
-//   render() {
+  //   render() {
 //     return (
 //       <div>
 //         <Greeting username="sir or madam"/>
 //         <Header />
+//       </div>
+//     )
+//   }
+// }
+
+// class App extends React.Component {
+//   constructor() {
+//      super()
+//      this.state = {
+//       answer: "yes.",
+//      }
+//   }
+
+//   render() {
+//     return (
+//       <div style={{paddingLeft: "32px"}}>
+//         <h1>Is state important to know?</h1>
+//         <h1>{this.state.answer}</h1>
 //       </div>
 //     )
 //   }
