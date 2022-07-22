@@ -6,6 +6,7 @@ class State3 extends React.Component {
         this.state = {
             count : 0
         }
+        this.handleClick = this.handleClick.bind(this)
     }
 
     increaseCount() {
@@ -13,7 +14,7 @@ class State3 extends React.Component {
     }
 
     handleClick() {
-        console.log("okayu")
+        this.setState += 1;
     }
 
     render() {
