@@ -8,7 +8,18 @@ class AppTodo extends React.Component {
         this.state = {
             todos: todosData,
         }
+        this.handleChange = this.handleChange.bind(this)
+        this.setState = this.setState.bind(this)
     }
+
+    handleChange(id) {
+        this.setState(prevState => {
+            let todosNew = todosData
+            todosNew[id - 1].completed = !prevState[id - 1].completed
+            return {
+                todos: todosNew
+            }
+    })}
 
     render() {
         const todoItems = this.state.todos.map(elem => {
