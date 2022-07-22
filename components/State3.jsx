@@ -9,19 +9,19 @@ class State3 extends React.Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
-    increaseCount() {
-        this.state.count += 1
-    }
-
     handleClick() {
-        this.setState += 1;
+        this.setState(prevState => {
+            return {
+                count: prevState.count + 1 // we are returning a whole object!
+            }
+        })
     }
 
     render() {
         return (
             <div style={{padding : "32px"}}>
                 <h1>{this.state.count}</h1>
-                <button onClick={this.handleClick}>Increase it!</button>
+                <button onClick={() => this.handleClick()}>Increase it!</button>
             </div>
             )
     }
