@@ -10,7 +10,7 @@ class State3 extends React.Component {
     }
 
     handleClick() {
-        this.setState(prevState => {
+        this.setState(prevState => { 
             return { 
                 count: prevState.count + 1 // we are returning a whole object!
             }
