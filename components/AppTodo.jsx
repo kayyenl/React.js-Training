@@ -25,7 +25,7 @@ class AppTodo extends React.Component {
         const todoItems = this.state.todos.map(elem => {
             return <TodoItem 
                 key = {elem.id}
-                info = {elem} />
+                info = {elem} /> 
         })
         const styles = {
             color: "green",
