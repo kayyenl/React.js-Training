@@ -11,20 +11,39 @@ class AppTodo extends React.Component {
         this.handleChange = this.handleChange.bind(this)
     }
 
+    // handleChange(id) {
+    //     this.setState(prevState => {
+    //         let todosNew = todosData
+    //         let prevBool = !prevState.todos[id - 1].completed
+    //         todosNew[id - 1].completed = prevBool
+    //         console.log(prevState.todos[id - 1].completed)
+    //         return {
+    //             todos: todosNew
+    //         }
+    //     })
+    // }
+
     handleChange(id) {
-        let todosNew = todosData
         this.setState(prevState => {
-            todosNew[id - 1].completed = !prevState[id - 1].completed
+            const newTodo = prevState.todos.map(elem => {
+                if (elem.id === id) {
+                    console.log(elem.id)
+                    elem.completed = !elem.completed 
+                }
+                return elem
+            })
             return {
-                todos: todosNew
+                todos: newTodo
             }
-    })}
+        })
+    }
 
     render() {
         const todoItems = this.state.todos.map(elem => {
             return <TodoItem 
                 key = {elem.id}
-                info = {this.state.todos[elem.id-1]} /> 
+                info = {elem}
+                handleChange = {this.handleChange} /> 
         })
         const styles = {
             color: "green",
