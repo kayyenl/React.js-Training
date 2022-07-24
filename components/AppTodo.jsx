@@ -9,12 +9,11 @@ class AppTodo extends React.Component {
             todos: todosData,
         }
         this.handleChange = this.handleChange.bind(this)
-        this.setState = this.setState.bind(this)
     }
 
     handleChange(id) {
+        let todosNew = todosData
         this.setState(prevState => {
-            let todosNew = todosData
             todosNew[id - 1].completed = !prevState[id - 1].completed
             return {
                 todos: todosNew
@@ -25,7 +24,7 @@ class AppTodo extends React.Component {
         const todoItems = this.state.todos.map(elem => {
             return <TodoItem 
                 key = {elem.id}
-                info = {elem} /> 
+                info = {this.state.todos[elem.id-1]} /> 
         })
         const styles = {
             color: "green",

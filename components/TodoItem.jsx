@@ -14,7 +14,7 @@ const TodoItem = (props) => {
     }
     return (
         <div style={styles}>
-             <input  type="checkbox" onChange={this.handleChange(props.id)} checked={props.info.completed} /> {props.info.text} <br />
+             <input  type="checkbox" onChange={() => this.handleChange(props.id)} checked={props.info.complete} /> {props.info.text} <br />
         </div>
     );
 }
