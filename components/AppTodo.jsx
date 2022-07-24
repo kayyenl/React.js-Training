@@ -54,7 +54,7 @@ class AppTodo extends React.Component {
         }
         return (
             <div style = {styles}>
-                {todoItems}
+                {todoItems} 
             </div>
         );
     }
