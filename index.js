@@ -3,11 +3,12 @@ import ReactDOM from 'react-dom/client';
 import Truthy from './components/Truthy';
 import App2 from './components/App2';
 import State4 from './components/State4'
+import AppTodo from './components/AppTodo';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <State4 />
+    <AppTodo />
 );
 
 
