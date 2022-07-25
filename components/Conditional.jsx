@@ -1,12 +1,21 @@
 import React, { Component } from 'react';
 
 class Conditional extends Component {
+    constructor(props) {
+        super(props)
+    }
+
     render() {
+        if (this.props.isLoading === true) {
+            return (
+                <div>
+                    <h1>Loading...</h1>
+                </div>
+            );
+        }
         return (
-            <div>
-                <h1>hello there</h1>
-            </div>
-        );
+            <h1>Success</h1>
+        )
     }
 }
 
