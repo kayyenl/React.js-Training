@@ -1,16 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import State2 from './components/State2'
-import State3 from './components/State3'
-import AppTodo from './components/AppTodo'
+import Truthy from './components/Truthy';
 import App2 from './components/App2';
-import Event from './components/Event'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App2 />
+    <Truthy />
 );
 
 

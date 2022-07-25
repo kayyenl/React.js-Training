@@ -6,15 +6,12 @@ class Conditional extends Component {
     }
 
     render() {
-        if (this.props.isLoading === true) {
-            return (
-                <div>
-                    <h1>Loading...</h1>
-                </div>
-            );
-        }
         return (
-            <h1>Success</h1>
+            <div>
+                <h3>Navbar</h3>
+                {this.props.isLoading ? <h1>Loading...</h1> : <h1>Success!</h1>}
+                <h3>Bottombar</h3>
+            </div>
         )
     }
 }
