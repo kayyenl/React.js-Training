@@ -1,3 +1,4 @@
+import { getSuggestedQuery } from '@testing-library/react';
 import React from 'react';
 
 function consoleLogger() {
@@ -17,12 +18,12 @@ const TodoItem = (props) => {
     }
 
     const strikeStyles = {
-        textDecoration: "line-through"
+        textDecoration: "line-through",
+        color: "#cdcdcd",
+        fontStyle: "italic"
     }
 
-    const noneStyles = {
-        textDecoration: "none"
-    }
+    const noneStyles = {}
 
     function styleDecider(bool) {
         return bool ? strikeStyles : noneStyles
