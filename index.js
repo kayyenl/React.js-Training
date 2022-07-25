@@ -4,12 +4,13 @@ import './index.css';
 import State2 from './components/State2'
 import State3 from './components/State3'
 import AppTodo from './components/AppTodo'
+import App2 from './components/App2';
 import Event from './components/Event'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <AppTodo />
+    <App2 />
 );
 
 
