@@ -12,8 +12,11 @@ const TodoItem = (props) => {
         padding: "32px 8px",
         margin: "0 auto",
     }
-    
-    const condStyles = {
+    function testFunction() {
+        return styles
+    }
+
+    const strikeStyles = {
         textDecoration: "line-through"
     }
 
@@ -22,12 +25,12 @@ const TodoItem = (props) => {
     }
 
     function styleDecider(bool) {
-        return bool ? {noneStyles} : {condStyles}
+        return bool ? strikeStyles : noneStyles
     }
     return (
-        <div style={styles}>
+        <div style={testFunction()}>
              <input type="checkbox" onChange={() => props.handleChange(props.info.id)} checked={props.info.completed} /> 
-             <span style={() => styleDecider(props.info.completed)}>{props.info.text}</span> <br />
+             <span style={styleDecider(props.info.completed)}>{props.info.text}</span> <br />
         </div>
     );
 }
