@@ -18,8 +18,8 @@ class Fetch extends Component {
             height: callJson.height,
             loading: false
         })
-    }
-
+    } 
+ 
     render() {
         return (
             <div>
