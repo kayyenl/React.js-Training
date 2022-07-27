@@ -20,9 +20,9 @@ class Forms extends Component {
     render() {
         return (
             <form>
-                <input type="text" placeholder='firstname' name='firstName' onChange={(event) => this.updateInput(event)}/>
+                <input type="text" value={this.state.firstName} placeholder='firstname' name='firstName' onChange={(event) => this.updateInput(event)}/>
                 <br />
-                <input type="text" placeholder='lastname' name='lastName' onChange={(event) => this.updateInput(event)}/>
+                <input type="text" value={this.state.lastName} placeholder='lastname' name='lastName' onChange={(event) => this.updateInput(event)}/>
                 <h1>{this.state.firstName} {this.state.lastName}</h1>
             </form>
         );
