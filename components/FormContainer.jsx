@@ -14,6 +14,7 @@ class FormContainer extends Component {
             chicken: false,
             plantbased: false 
         }
+        this.handleClick = this.handleClick.bind(this)
     }
 
     handleClick(event) {

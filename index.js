@@ -1,12 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Fetch from './components/Fetch';
-import TravelForm from './components/TravelForm';
+import MemeGenerator from './components/MemeGenerator'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <TravelForm/>
+    <MemeGenerator/>
 );
 
 
