@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import Fetch from './components/Fetch';
-import Forms from './components/Forms';
+import TravelForm from './components/TravelForm';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <Forms/>
+    <TravelForm/>
 );
 
 
