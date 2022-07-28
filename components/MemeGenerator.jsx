@@ -14,7 +14,7 @@ class MemeGenerator extends Component {
     async componentDidMount() {
         const pullAllMemes = await fetch("https://api.imgflip.com/get_memes")
         const memeJson = await pullAllMemes.json()
-        const memeArray = memeJson.data
+        const memeArray = memeJson.data.memes
         this.setState({
             allMemes : memeArray
         })
@@ -24,6 +24,14 @@ class MemeGenerator extends Component {
         const {name, value} = event.target
         this.setState({
             [name] : value
+        })
+    }
+
+    switchImage() {
+        const randNo = Math.floor(Math.random() * 100)
+        const memestring = this.state.allMemes[randNo].url
+        this.setState({
+            randImage: memestring
         })
     }
     
@@ -82,7 +90,7 @@ class MemeGenerator extends Component {
                 <form style= {formformat} >
                     <input style= {inputformat} placeholder="Top Text" type="text" name='topText' value={this.state.topText} onChange={(event) => this.handleChange(event)}/> <br />
                     <input style= {inputformat} placeholder="Bottom Text" type="text" name='bottomText' value={this.state.bottomText} onChange={(event) => this.handleChange(event)}/> <br />
-                    <button style = {styles}>
+                    <button type='button' style = {styles} onClick={() => this.switchImage()}>
                         Generate Meme
                     </button>
                 </form>
