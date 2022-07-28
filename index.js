@@ -1,11 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import MemeGenerator from './components/MemeGenerator'
+import MemeHeader from './components/MemeHeader';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <MemeGenerator/>
+  <div>
+    <MemeHeader />
+    <MemeGenerator />
+  </div>
 );
 
 
