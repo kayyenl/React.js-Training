@@ -25,8 +25,6 @@ class MemeGenerator extends Component {
         this.setState({
             [name] : value
         })
-        console.log(name)
-        console.log(value)
     }
     
     
@@ -35,7 +33,8 @@ class MemeGenerator extends Component {
             display: "flex",
             paddingTop: "20px",
             justifyContent: "center",
-            alignItems: 'center'
+            alignItems: 'center',
+            flexDirection: 'column'
         }
         const styles = {
             textAlign: "center",
@@ -46,7 +45,6 @@ class MemeGenerator extends Component {
             borderRadius: "24px",
             fontFamily: "consolas",
             cursor: "pointer",
-            transition: "all 300ms ease",
             boxShadow: "0 0 8px"
         }
         const formformat = {
@@ -58,6 +56,26 @@ class MemeGenerator extends Component {
         const inputformat = {
             alignItems: "center"
         }
+        const imageformat = {
+            position: "relative"
+        }
+        const caption = {
+            position: "absolute",
+            left: "50%",
+            transform: "translateX(-50%)",
+            fontFamily: "impact",
+            color: 'white',
+            fontSize: "42px",
+            textTransform: "uppercase",
+            textShadow: "4px 0 0 #000, 0 -4px 0 #000, 0 4px 0 #000, -4px 0 0 #000",
+            whiteSpace: 'nowrap'
+        }
+        const top = {
+            top: 0
+        }
+        const bottom = {
+            bottom: 0
+        }
 
         return (
             <div style = {format}>
@@ -68,6 +86,11 @@ class MemeGenerator extends Component {
                         Generate Meme
                     </button>
                 </form>
+                <div style={imageformat}>
+                    <img src={this.state.randImage} alt="" />
+                    <h2 style={{...caption, ...top}}>{this.state.topText}</h2>
+                    <h2 style={{...bottom, ...caption}}>{this.state.bottomText}</h2>
+                </div>
             </div>
         );
     }
