@@ -39,7 +39,7 @@ class MemeGenerator extends Component {
     render() {
         const format = {
             display: "flex",
-            paddingTop: "20px",
+            paddingTop: "20px", 
             justifyContent: "center",
             alignItems: 'center',
             flexDirection: 'column'
